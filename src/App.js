@@ -8,8 +8,8 @@ function App() {
     //State aanmaken
     const [input, setInput] = useState('');
     const [messages, setMessages] = useState([
-        {username: 'sonny', text: 'hey guys'},
-        {username: 'qazi', text: 'Whats up'}
+        {username: 'Monique', text: 'hey guys'},
+        {username: 'Lise', text: 'Whats up'}
     ]);
     //Stukje state om de user te onthouden
     const [username, setUsername] = useState('');
@@ -53,7 +53,7 @@ function App() {
 
         {
             messages.map(message => (
-                <Message username={message.username} text={message.text} />
+                <Message username={username} message={message} />
 
             ))
         }
