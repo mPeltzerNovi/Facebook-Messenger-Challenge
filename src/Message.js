@@ -4,6 +4,7 @@ import './Message.css';
 
 
 //Dit keer material-UI gebruiken voor de styling
+//App Deployed op 20 juni 21
 
 const Message = forwardRef(({ message, username}, ref) => {
     const isUser = username === message.username;
